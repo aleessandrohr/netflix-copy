@@ -9,8 +9,6 @@
 
 # Netflix Copy.
 
----
-
 ## Acesse
 
 Para acessar a cópia da netflix, apenas clique [aqui](https://alessandrohenriqueramos.github.io/netflix-copy/build).
