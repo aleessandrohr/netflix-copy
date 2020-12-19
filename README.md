@@ -11,7 +11,7 @@
 
 ## Acesse
 
-Para acessar a cópia da netflix, apenas clique [aqui](https://alessandrohenriqueramos.github.io/netflix-copy/build).
+Para acessar a cópia da netflix, apenas clique [aqui](https://netflixcopy.vercel.app/).
 
 <img src="https://media.giphy.com/media/LnuOPA23FxnCoW7RBI/giphy.gif" alt="gif" height="180px" >
 
