@@ -1,0 +1,64 @@
+body {
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    margin: 0.8rem 0 0 3rem;
+    filter: brightness(1.5);
+}
+
+.nav .nav-items {
+    margin: 0 2rem;
+}
+
+.nav .nav-items ul {
+    list-style: none;
+}
+
+.nav .nav-items ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(243, 20, 20);
+    color: white;
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 3rem;
+}
+
+.footer {
+    text-align: center;
+}
+
+.footer p span a {
+    text-decoration: none;
+    color: white;
+}
