@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
-    <img src="https://img.shields.io/badge/version-1.0-red" alt="versão">
+    <img src="https://img.shields.io/badge/version-1.1-red" alt="versão">
 </p>
 
 # Netflix Copy.
