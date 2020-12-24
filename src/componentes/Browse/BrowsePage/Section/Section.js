@@ -3,18 +3,18 @@ import './Section.css';
 
 const Section = (props) => {
 
-    const handleLeft = (classeX) => {
-        let movieList = document.getElementById(`movieList-${classeX}`)
+    const handleLeft = (key) => {
+        let movieList = document.getElementById(`movieList-${key}`)
         let style = movieList.currentStyle || window.getComputedStyle(movieList);
         let x = parseInt(style.marginLeft) + Math.round(window.innerWidth / 2);
-        if (x > 0) {
+        if (x > 0 || x === 0) {
             x = 0
         }
         movieList.style.marginLeft = `${x}px`
     }
 
-    const handleRight = (item, classeX) => {
-        let movieList = document.getElementById(`movieList-${classeX}`)
+    const handleRight = (item, key) => {
+        let movieList = document.getElementById(`movieList-${key}`)
         let style = movieList.currentStyle || window.getComputedStyle(movieList);
         let x = parseInt(style.marginLeft) - Math.round(window.innerWidth / 2);
         let listW = item.results.length * 150;

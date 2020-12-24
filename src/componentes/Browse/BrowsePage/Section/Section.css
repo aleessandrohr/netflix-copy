@@ -17,7 +17,6 @@
     align-items: center;
     opacity: 0;
     transition: all ease 0.3s;
-    color: red;
 }
 
 .movieChevron .chevronLeft i, .movieChevron .chevronRight i {
@@ -68,6 +67,14 @@
     
     .movieChevron .chevronLeft, .movieChevron .chevronRight {
         opacity: 1;
+    }
+
+    .movieItem img {
+        width: 150px;
+    }
+
+    .movieChevron .chevronLeft, .movieChevron .chevronRight {
+        height: 225px;
     }
 
 }
