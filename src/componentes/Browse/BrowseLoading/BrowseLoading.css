@@ -1,0 +1,11 @@
+.container-BrowseLoading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container-BrowseLoading h1 {
+    font-size: 1.5rem;
+}

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Dados from '../API/Dados';
 import BrowsePage from './BrowsePage/BrowsePage';
+import BrowseLoading from './BrowseLoading/BrowseLoading';
 
 const Browse = () => {
-
     const [movieList, setMovieList] = useState([]);
     const [featuredData, setFeaturedData] = useState(null);
 
@@ -23,7 +23,7 @@ const Browse = () => {
 
     return(
         <div className="container-Browse">
-            {featuredData && <BrowsePage movie={movieList} featured={featuredData} />}
+            {featuredData ? <BrowsePage movie={movieList} featured={featuredData} /> : <BrowseLoading />}
         </div>
     )
 }
