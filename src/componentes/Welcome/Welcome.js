@@ -13,7 +13,7 @@ const Welcome = () => {
                     <div className="nav-WelcomeItems">
                         <ul>
                             <li>
-                                <a href="/browse" rel="next">Entrar</a>
+                                <a href="/login" rel="next">Entrar</a>
                             </li>
                         </ul>
                     </div>
@@ -22,7 +22,7 @@ const Welcome = () => {
             <section className="section-Welcome">
                 <h1>Filmes, séries e muito mais. <br/> Sem limites.</h1>
             </section>
-            <footer className="footer-Welcome">
+            <footer className="footer">
                 <p>Não possuo a marca Netflix e portanto este site foi criado apenas para treinar minhas habilidades <br/> na criação de uma aplicação da web e nunca será usada para fins comerciais.</p>
                 <p>Veja o código-fonte no meu <a href="https://github.com/alessandrohenriqueramos/netflix-copy" rel="noreferrer" target="_blank">GitHub</a> <i className="fab fa-github"></i></p>
                 <p>Desenvolvido por Alessandro Henrique Ramos.</p>
