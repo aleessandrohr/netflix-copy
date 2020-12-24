@@ -1,0 +1,73 @@
+.container-listItem {
+    margin-bottom: 2rem;
+}
+
+.movieTitle h1 {
+    font-size: 1.5rem;
+    margin: 0 0 0 3rem;
+}
+
+.movieChevron .chevronLeft, .movieChevron .chevronRight {
+    position: absolute;
+    height: 300px;
+    font-size: 3rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all ease 0.3s;
+    color: red;
+}
+
+.movieChevron .chevronLeft i, .movieChevron .chevronRight i {
+    cursor: pointer;
+}
+
+.movieChevron .chevronLeft {
+    padding-left: 0.5rem;
+    left: 0;
+}
+
+.movieChevron .chevronRight {
+    padding-right: 0.5rem;
+    right: 0;
+}
+
+.container-listItem:hover .movieChevron  .chevronRight, .container-listItem:hover .movieChevron .chevronLeft {
+    opacity: 1;
+}
+
+.movieArea {
+    padding-left: 1.8rem;
+    overflow-x: hidden;
+}
+
+.movieList {
+    transition: all ease 0.5s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.movieItem img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+    transform: scale(0.8);
+    transition: all ease 0.3s;
+    cursor: pointer;
+}
+
+.movieItem img:hover {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    
+    .movieChevron .chevronLeft, .movieChevron .chevronRight {
+        opacity: 1;
+    }
+
+}
