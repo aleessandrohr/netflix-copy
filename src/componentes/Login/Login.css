@@ -1,0 +1,45 @@
+.container-login {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-Login .nav-Login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-Login .nav-Login .nav-LoginLogo img {
+    margin: 0.8rem 0 0 3rem;
+    filter: brightness(1.5);
+}
+
+.section-Login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex: 1;
+}
+
+.form-Login input {
+    margin: 10px;
+}
+
+.form-Login .form-LoginUser {
+    width: 10rem;
+    height: 1.8rem;
+    outline: 0;
+}
+
+.form-Login .form-LoginSubmit {
+    width: 5rem;
+    height: 2.2rem;
+    background-color: rgb(243, 20, 20);
+    border-width: 0;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+}
