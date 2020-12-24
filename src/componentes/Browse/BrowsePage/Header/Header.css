@@ -1,0 +1,107 @@
+.container-HeaderVertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, rgba(17, 17, 17, 0.788) 20%, transparent 80%);
+}
+
+.container-HeaderHorizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgba(17, 17, 17, 0.788) 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.container-HeaderItems .container-HeaderNav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: all ease 0.5s;
+}
+
+.container-HeaderItems .container-HeaderNav .container-HeaderNavLogo a img {
+    margin: 0.3rem 0 0 3rem;
+    filter: brightness(1.5);
+
+}
+
+.container-HeaderItems .container-HeaderNavItems ul {
+    list-style: none;
+}
+
+.container-HeaderItems h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.container-SectionOverview {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    max-width: 30%;
+    text-align: justify;
+}
+
+.container-SectionButtons {
+    margin-top: 1.2rem;
+}
+
+.container-SectionButtons a {
+    font-size: 1.2rem;
+    padding: 0.6rem 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    opacity: 1;
+    transition: all ease 0.3s;
+    
+}
+
+.container-SectionButtons a:hover {
+    opacity: 0.8;
+}
+
+.container-SectionButtons .watch {
+    background-color: #fff;
+    color: #000;
+}
+
+.container-SectionButtons .plus {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+
+    .container-HeaderItems h1 {
+        font-size: 1.5rem;
+    }
+
+    .container-SectionOverview {
+        font-size: 1rem;
+        max-width: 70%;
+    }
+
+    .container-SectionButtons a {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .container-SectionButtons a {
+        font-size: 0.6rem;
+    }
+
+    .container-SectionButtons .plus {
+        padding: 0.6rem 0.4rem;
+    }
+
+}
