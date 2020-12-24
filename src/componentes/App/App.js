@@ -12,7 +12,7 @@ const App = () => {
                     <Route exact path="/">
                         <Welcome/>
                     </Route>
-                    <Route path="/browse">
+                    <Route path="netflixcopy.vercel.app/browse">
                         <Browse />
                     </Route>
                 </Switch>
