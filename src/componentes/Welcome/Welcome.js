@@ -13,7 +13,7 @@ const Welcome = () => {
                     <div className="nav-WelcomeItems">
                         <ul>
                             <li>
-                                <a href="netflixcopy.vercel.app/browse" rel="next">Entrar</a>
+                                <a href="/browse" rel="next">Entrar</a>
                             </li>
                         </ul>
                     </div>
