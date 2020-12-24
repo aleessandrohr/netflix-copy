@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
-    <img src="https://img.shields.io/badge/version-1.1-red" alt="versão">
+    <img src="https://img.shields.io/badge/version-1.2-red" alt="versão">
 </p>
 
 # Netflix Copy.
@@ -31,7 +31,14 @@ Para o desenvolvimento desta aplicação foi utilizado as seguintes tecnologias:
 
 ## Ajustes e melhorias
 
-A aplicação ainda está em desenvolvimento e portanto não teve ajustes e melhorias.
+A aplicação teve os seguintes ajustes e melhorias.
+
+* Adicionado interface inicial;
+* Adicionado dados da API;
+* Adicionado interface de usuários;
+* Adicionado featured;
+* Adicionado filmes e séries
+* Adicionado animações;
 
 ---
 
