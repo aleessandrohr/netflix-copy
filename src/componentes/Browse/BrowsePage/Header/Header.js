@@ -31,6 +31,13 @@ const Header = (props) => {
         description = description.substring(0, 200) + '...';
     }
 
+    //let userName = localStorage.getItem("Username")
+
+    const clearStorage = () => {
+        window.location.reload()
+        localStorage.clear()
+    }
+
     return(
         <div className="container-HeaderVertical">
             <div className="container-HeaderHorizontal">
@@ -44,7 +51,9 @@ const Header = (props) => {
                         <div className="container-HeaderNavItems">
                             <ul>
                                 <li>
-
+                                    <button onClick={clearStorage}>
+                                        Sair da Netflix
+                                    </button>
                                 </li>
                             </ul>
                         </div>

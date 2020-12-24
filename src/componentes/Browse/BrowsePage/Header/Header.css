@@ -36,6 +36,20 @@
     list-style: none;
 }
 
+.container-HeaderItems .container-HeaderNavItems ul li {
+    padding-right: 3rem;
+}
+
+.container-HeaderItems .container-HeaderNavItems ul li button {
+    width: 7.5rem;
+    height: 2rem;
+    background-color: rgb(243, 20, 20);
+    border-width: 0;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+}
+
 .container-HeaderItems h1 {
     font-size: 2.5rem;
     font-weight: bold;
