@@ -19,7 +19,7 @@ const BrowsePage = (props) => {
             <section className="container-BrowsePageSection">
                 <Section movie={props.movie}/>
             </section>
-            <footer className="container-BrowsePageFooter">
+            <footer className="footer">
                 <p>Não possuo a marca Netflix e portanto este site foi criado apenas para treinar minhas habilidades <br/> na criação de uma aplicação da web e nunca será usada para fins comerciais.</p>
                 <p>Veja o código-fonte no meu <a href="https://github.com/alessandrohenriqueramos/netflix-copy" rel="noreferrer" target="_blank">GitHub</a> <i className="fab fa-github"></i></p>
                 <p>Desenvolvido por Alessandro Henrique Ramos.</p>
