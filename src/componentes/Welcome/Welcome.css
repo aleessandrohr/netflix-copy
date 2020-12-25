@@ -12,7 +12,7 @@
 
 .header-Welcome .nav-Welcome .nav-WelcomeLogo img {
     margin: 0.8rem 0 0 3rem;
-    filter: brightness(1.5);
+    filter: brightness(1.2);
 }
 
 .header-Welcome .nav-Welcome .nav-WelcomeItems {
@@ -28,10 +28,10 @@
     justify-content: center;
     align-items: center;
     width: 5rem;
-    height: 2.2rem;
+    height: 2.1rem;
     background-color: rgb(243, 20, 20);
     color: white;
-    border-radius: 3px;
+    border-radius: 5px;
     text-decoration: none;
     cursor: pointer;
 }
@@ -54,5 +54,6 @@
 }
 
 .footer p a {
+    text-decoration: none;
     color: white;
 }
