@@ -6,6 +6,15 @@
     height: 100vh;
 }
 
-.container-BrowseLoading h1 {
-    font-size: 1.5rem;
+.spinner {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 8px solid #141414;
+    border-left-color: rgb(243, 20, 20);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
 }

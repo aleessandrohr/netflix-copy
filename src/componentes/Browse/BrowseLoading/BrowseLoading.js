@@ -4,7 +4,7 @@ import './BrowseLoading.css';
 const BrowseLoading = () => {
     return(
         <div className="container-BrowseLoading">
-            <h1>Carregando...</h1>
+            <div className="spinner"></div>
         </div>
     )
 }
