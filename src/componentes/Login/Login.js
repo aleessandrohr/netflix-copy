@@ -14,7 +14,7 @@ const Login = ({LoggedTrue}) => {
         if (userName !== '' && userName.length > 3) {
             LoggedTrue(userName)
         } else {
-            alert('Ops\n\Preencha todas as informações corretamente!')
+            alert('Ops\nPreencha todas as informações corretamente!')
             setUserName('')
         }
         event.preventDefault()
