@@ -1,9 +1,0 @@
-.container-BrowsePageHeader {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.container-BrowsePageSection {
-    margin-top: -8rem;
-}
