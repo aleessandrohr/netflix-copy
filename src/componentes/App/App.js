@@ -24,7 +24,7 @@ const App = () => {
             <div className="container">
                 <Switch>
                     <Route exact path="/">
-                        {Logged === "true" ? <Redirect to="/browse" /> : <Welcome Logged={Logged} />}
+                        {Logged === "true" ? <Redirect to="/browse" /> : <Welcome />}
                     </Route>
                     <Route path="/login">
                         {Logged === "true" ? <Redirect to="/browse" /> : <Login LoggedTrue={LoggedTrue} /> }
