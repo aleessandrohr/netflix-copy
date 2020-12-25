@@ -33,9 +33,10 @@ Para o desenvolvimento desta aplicação foi utilizado as seguintes tecnologias:
 
 A aplicação teve os seguintes ajustes e melhorias.
 
-* Adicionado sistema de login simples;
+* Melhorado layout da tela de login;
 * Melhorado responsividade;
-* Adicionado tela de carregando;
+* Melhorado navbar;
+* Melhorado tela de carregamento;
 
 ---
 
