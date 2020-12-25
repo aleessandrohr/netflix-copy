@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, memo } from 'react';
 import Dados from '../API/Dados';
 import BrowsePage from './BrowsePage/BrowsePage';
 import BrowseLoading from './BrowseLoading/BrowseLoading';
@@ -28,4 +28,4 @@ const Browse = () => {
     )
 }
 
-export default Browse;
+export default memo(Browse);
