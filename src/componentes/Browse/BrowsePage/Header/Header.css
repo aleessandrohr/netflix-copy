@@ -28,7 +28,7 @@
 
 .container-HeaderItems .container-HeaderNav .container-HeaderNavLogo a img {
     margin: 0.3rem 0 0 3rem;
-    filter: brightness(1.5);
+    filter: brightness(1.2);
 
 }
 
@@ -37,17 +37,44 @@
 }
 
 .container-HeaderItems .container-HeaderNavItems ul li {
-    padding-right: 3rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.container-HeaderItems .container-HeaderNavItems ul li button {
-    width: 7.5rem;
-    height: 2rem;
-    background-color: rgb(243, 20, 20);
-    border-width: 0;
+.container-HeaderItems .container-HeaderNavItems ul li .fa-chevron-down {
+    margin: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.navItems-Profile {
+    background-color: #000000E6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: 60px;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 7px;
+    visibility: hidden;
+    transition: all ease 0.4s;
+}
+
+.navItems-Profile ul {
+    margin: 1rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navItems-Profile ul li {
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.25rem;
     cursor: pointer;
-    color: white;
-    border-radius: 3px;
 }
 
 .container-HeaderItems h1 {
@@ -99,11 +126,15 @@
 
     .container-SectionOverview {
         font-size: 1rem;
-        max-width: 70%;
+        max-width: 80%;
     }
 
     .container-SectionButtons a {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
+    }
+
+    .container-SectionButtons .plus {
+        padding: 0.6rem 0.8rem;
     }
 
 }
@@ -111,11 +142,16 @@
 @media (max-width: 320px) {
 
     .container-SectionButtons a {
-        font-size: 0.6rem;
+        font-size: 0.55rem;
+    }
+
+    .container-SectionOverview {
+        font-size: 0.8rem;
+        max-width: 90%;
     }
 
     .container-SectionButtons .plus {
-        padding: 0.6rem 0.4rem;
+        padding: 0.6rem 0.6rem;
     }
 
 }

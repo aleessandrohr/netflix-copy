@@ -2,9 +2,10 @@ import React, { useState, useEffect, memo } from 'react';
 import Netflix from '../../../../imagens/netflix-logo-93x49.png';
 import './Header.css';
 
-const Header = (props) => {
+const Header = ({featured}) => {
 
     const [blackNav, setBlackNav] = useState(false);
+    const [visibility, setVisibility] = useState(false);
 
     useEffect(() => {
         const scrollOn = () => {
@@ -23,19 +24,32 @@ const Header = (props) => {
     }, []);
 
     const navStyle = {
-        backgroundColor: blackNav && '#141414',
+        backgroundColor: blackNav && '#161616',
     }
 
-    let description = props.featured.overview
+    let description = featured.overview
     if (description.length > 200) {
         description = description.substring(0, 200) + '...';
     }
 
-    //let userName = localStorage.getItem("Username")
+    let userName = localStorage.getItem("Username")
 
     const clearStorage = () => {
         window.location.reload()
         localStorage.clear()
+    }
+
+    const visibilityProfile = () => {
+        let profile = document.getElementById('navItems-Profile')
+        if (visibility === true) {
+            profile.style.visibility = "hidden"
+            profile.style.opacity = 0
+            setVisibility(false)
+        } else {
+            profile.style.visibility = "visible"
+            profile.style.opacity = 1
+            setVisibility(true)
+        }
     }
 
     return(
@@ -50,22 +64,31 @@ const Header = (props) => {
                         </div>
                         <div className="container-HeaderNavItems">
                             <ul>
-                                <li>
-                                    <button onClick={clearStorage}>
-                                        Sair da Netflix
-                                    </button>
+                                <li onClick={visibilityProfile}>
+                                    <img className="navItem-Avatar" src="https://icons.iconarchive.com/icons/papirus-team/papirus-status/32/avatar-default-icon.png" alt="Avatar"/>
+                                    <i className="fas fa-chevron-down"></i>
                                 </li>
                             </ul>
                         </div>
                     </nav>
-                    <h1>{props.featured.original_name}</h1>
+                    <nav className="navItems-Profile" id="navItems-Profile">
+                        <ul>
+                            <li>
+                                {userName}
+                            </li>
+                            <li onClick={clearStorage}>
+                                Sair da Netflix
+                            </li>
+                        </ul>
+                    </nav>
+                    <h1>{featured.original_name}</h1>
                 </header>
                 <section className="container-SectionOverview">
                     <p>{description}</p>
                 </section>
                 <section className="container-SectionButtons">
-                    <a className="watch" href={props.featured.homepage}><i className="fas fa-play"></i> Assistir</a>
-                    <a className="plus" href={props.featured.homepage}><i className="fas fa-info-circle"></i> Mais informações</a>
+                    <a className="watch" href={featured.homepage} target="_blank" rel="noreferrer"><i className="fas fa-play"></i> Assistir</a>
+                    <a className="plus" href={featured.homepage} target="_blank" rel="noreferrer"><i className="fas fa-info-circle"></i> Mais informações</a>
                 </section>
             </div>
         </div>
