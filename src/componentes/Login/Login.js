@@ -2,7 +2,7 @@ import React, { useState, memo } from 'react';
 import Netflix from '../../imagens/netflix-logo-150x79.png';
 import './Login.css';
 
-const Login = (props) => {
+const Login = ({LoggedTrue}) => {
 
     const [userName, setUserName] = useState('');
 
@@ -11,14 +11,17 @@ const Login = (props) => {
     }
 
     const setUserSubmit = (event) => {
-        if (setUser !== '') {
-            props.LoggedTrue(userName)
+        if (userName !== '' && userName.length > 3) {
+            LoggedTrue(userName)
+        } else {
+            alert('Ops\n\Preencha todas as informações corretamente!')
+            setUserName('')
         }
         event.preventDefault()
     }
 
     return(
-        <div className="container-login">
+        <div className="container-Login">
             <header className="header-Login">
                 <nav className="nav-Login">
                     <div className="nav-LoginLogo">
