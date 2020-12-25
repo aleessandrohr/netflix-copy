@@ -3,10 +3,10 @@ import Header from './Header/Header';
 import Section from './Section/Section';
 import './BrowsePage.css';
 
-const BrowsePage = (props) => {
+const BrowsePage = ({featured, movie}) => {
 
     const backgroundStyle = {
-        backgroundImage: `url(https://image.tmdb.org/t/p/original${props.featured.backdrop_path})`,
+        backgroundImage: `url(https://image.tmdb.org/t/p/original${featured.backdrop_path})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }
@@ -14,10 +14,10 @@ const BrowsePage = (props) => {
     return(
         <div className="container-BrowsePage">
             <header style={backgroundStyle} className="container-BrowsePageHeader">
-                <Header featured={props.featured} />
+                <Header featured={featured} />
             </header>
             <section className="container-BrowsePageSection">
-                <Section movie={props.movie}/>
+                <Section movie={movie}/>
             </section>
             <footer className="footer">
                 <p>Não possuo a marca Netflix e portanto este site foi criado apenas para treinar minhas habilidades <br/> na criação de uma aplicação da web e nunca será usada para fins comerciais.</p>
