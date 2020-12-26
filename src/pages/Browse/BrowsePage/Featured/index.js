@@ -75,14 +75,14 @@ const Featured = ({featuredData}) => {
                         </div>
                         <div className="featured-NavItems">
                             <ul>
-                                <li onClick={visibilityProfile} onMouseEnter={visibilityProfile}>
+                                <li onClick={visibilityProfile}>
                                     <img className="navItem-Avatar" src="https://icons.iconarchive.com/icons/papirus-team/papirus-status/32/avatar-default-icon.png" alt="Avatar"/>
                                     <i className="fas fa-chevron-down"></i>
                                 </li>
                             </ul>
                         </div>
                     </nav>
-                    <nav className="featured-NavProfile" id="featured-NavProfile" onMouseLeave={visibilityProfile}>
+                    <nav className="featured-NavProfile" id="featured-NavProfile">
                         <ul>
                             <li>
                                 {userName}
