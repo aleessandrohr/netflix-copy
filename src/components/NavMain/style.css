@@ -8,3 +8,8 @@
     margin: 0.8rem 0 0 3rem;
     filter: brightness(1.2);
 }
+
+.navMain .navMain-NavLogo .navMain-NavLink {
+    color: white;
+    text-decoration: none;
+}
