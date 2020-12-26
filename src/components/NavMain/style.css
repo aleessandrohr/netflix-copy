@@ -1,0 +1,10 @@
+.navMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMain .navMain-NavLogo {
+    margin: 0.8rem 0 0 3rem;
+    filter: brightness(1.2);
+}
