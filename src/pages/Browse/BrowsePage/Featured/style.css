@@ -27,7 +27,7 @@
 }
 
 .featured-Nav .featured-NavLogo .featured-NavLogoLink img {
-    margin: 0.3rem 0 0 3rem;
+    padding: 0.3rem 3rem;
     filter: brightness(1.2);
 }
 
