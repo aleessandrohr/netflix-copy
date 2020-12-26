@@ -16,7 +16,7 @@ const BrowsePage = ({featuredData}) => {
     return(
         <div className="browsePage">
             <header style={backgroundStyle} className="browsePage-Header">
-                <Featured featuredData={featuredData} />
+                <Featured featuredData={featuredData} movie />
             </header>
             <section className="browsePage-Section">
 
