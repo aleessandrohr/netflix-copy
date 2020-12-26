@@ -15,6 +15,11 @@
     filter: brightness(1.2);
 }
 
+.welcome-Nav .welcome-NavLogo .welcome-NavLink {
+    text-decoration: none;
+    color: white;
+}
+
 .welcome-Nav .welcome-NavItems {
     margin: 0 2.5rem;
 }
@@ -23,7 +28,7 @@
     list-style: none;
 }
 
-.welcome-Nav .welcome-NavItems ul li a {
+.welcome-Nav .welcome-NavItems ul li .welcome-NavItemLink {
     display: flex;
     justify-content: center;
     align-items: center;
