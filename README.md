@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
-    <img src="https://img.shields.io/badge/version-2.0-red" alt="versão">
+    <img src="https://img.shields.io/badge/version-2.0.0-red" alt="versão">
 </p>
 
 # Netflix Copy.
@@ -31,7 +31,11 @@ Para o desenvolvimento desta aplicação foi utilizado as seguintes tecnologias:
 
 ## Ajustes e melhorias
 
-A versão 2.0 da aplicação está em desenvolvimento.
+A aplicação teve os seguintes ajustes e melhorias:
+
+* Refeito a página de welcome;
+* Novo visual da página de login;
+* Adicionado página Error 404;
 
 ---
 
@@ -46,7 +50,8 @@ Com essas aplicações instaladas, abra o cmd ou o powershell (dependendo do sis
 ```
 git clone https://github.com/alessandrohenriqueramos/netflix-copy.git
 cd netflix-copy
-git branch 2.0
+git checkout 2.0
+git pull
 ```
 
 No Windows / Mac / Linux:
