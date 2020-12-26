@@ -1,0 +1,145 @@
+.featured-Vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.788) 25%, transparent 75%);
+}
+
+.featured-Horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgba(22, 22, 22, 0.788) 35%, transparent 65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.featured-Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: all ease 0.4s;
+}
+
+.featured-Nav .featured-NavLogo .featured-NavLogoLink img {
+    margin: 0.3rem 0 0 3rem;
+    filter: brightness(1.2);
+}
+
+.featured-Nav .featured-NavItems ul {
+    list-style: none;
+}
+
+.featured-Nav .featured-NavItems ul li {
+    margin-right: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.featured-Nav .featured-NavItems ul li .fa-chevron-down {
+    margin: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.featured-NavProfile {
+    background-color: #161616d8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: 60px;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 7px;
+    visibility: hidden;
+    transition: all ease 0.4s;
+}
+
+.featured-NavProfile ul {
+    margin: 0.5rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.featured-NavProfile ul li {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.25rem;
+    cursor: pointer;
+}
+
+.featured-Horizontal header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.featured-Overview {
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    max-width: 30%;
+    text-align: justify;
+}
+
+.featured-Buttons a {
+    padding: 0.8% 1.8%;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 0.5rem;
+    opacity: 1;
+    transition: all ease 0.4s;
+    height: 75%;
+}
+
+.featured-Buttons a:hover {
+    opacity: 0.8;
+}
+
+.featured-Buttons .watch {
+    background-color: #fff;
+    color: #000;
+}
+
+.featured-Buttons .plus {
+    background-color: #333;
+    color: #fff;
+}
+
+@media(max-width: 1024px) {
+    .featured-Horizontal header h1 {
+        font-size: 2.8rem;
+    }
+    .featured-Overview {
+        font-size: 1.5rem;
+        max-width: 50%;
+    }
+
+    .featured-Buttons a {
+        font-size: 1.5rem;
+        padding: 1.5% 3.5%;
+    }
+}
+
+@media (max-width: 760px) {
+    .featured-Horizontal header h1 {
+        font-size: 1.5rem;
+    }
+
+    .featured-Overview {
+        font-size: 1rem;
+        max-width: 80%;
+    }
+
+    .featured-Buttons a {
+        font-size: 0.75rem;
+        padding: 3% 5%;
+    }
+}
