@@ -3,7 +3,7 @@ import NavMain from '../../components/NavMain/index';
 import Footer from '../../components/Footer/index';
 import './style.css';
 
-const Login = () => {
+const Login = ({setLogged}) => {
 
     const [userName, setUserName] = useState('')
 
@@ -15,7 +15,7 @@ const Login = () => {
         if (userName !== '' && userName.length > 3) {
             localStorage.setItem("isLogged", "true")
             localStorage.setItem("Username", userName)
-            window.location.reload()
+            setLogged("true")
         } else {
             alert('Ops\nPreencha todas as informações corretamente!')
             setUserName('')
@@ -34,7 +34,7 @@ const Login = () => {
                     <form className="login-Form" onSubmit={submitUser}>
                         <input className="input-Text" type="text" value={userName} onChange={setUser} placeholder="Usuário"/>
                         <br/>
-                        <input className="input-Submit" type="submit" disabled value="Entrar"/>
+                        <input className="input-Submit" type="submit" value="Entrar"/>
                     </form>
                 </div>
             </section>
