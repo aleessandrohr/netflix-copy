@@ -1,0 +1,49 @@
+.welcome {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.welcome-Nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-Nav .welcome-NavLogo {
+    margin: 0.8rem 0 0 3rem;
+    filter: brightness(1.2);
+}
+
+.welcome-Nav .welcome-NavItems {
+    margin: 0 2.5rem;
+}
+
+.welcome-Nav .welcome-NavItems ul {
+    list-style: none;
+}
+
+.welcome-Nav .welcome-NavItems ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2.2rem;
+    background-color: rgb(243, 20, 20);
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.welcome-Section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.welcome-Section h1 {
+    font-size: 2.5rem;
+}
