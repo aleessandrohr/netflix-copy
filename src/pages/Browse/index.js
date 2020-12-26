@@ -23,7 +23,7 @@ const Browse = () => {
 
     return(
         <div>
-            {featuredData ? <BrowsePage featuredData={featuredData} /> : <BrowseLoading />}
+            {featuredData ? <BrowsePage featuredData={featuredData} movieList={movieList} /> : <BrowseLoading />}
         </div>
     );
 }
