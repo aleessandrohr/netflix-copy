@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Netflix from '../../imagens/netflix-logo-150x79.png';
 import './style.css';
 
@@ -6,7 +7,7 @@ const NavMain = () => {
     return(
         <nav className="navMain">
             <div className="navMain-NavLogo">
-                <img src={Netflix} alt="Netflix"/>
+                <Link className="navMain-NavLink" to="/"><img src={Netflix} alt="Netflix"/></Link>
             </div>
         </nav>
     );
