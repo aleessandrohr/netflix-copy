@@ -6,49 +6,54 @@
 
 .welcome-Nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 
-.welcome-Nav .welcome-NavLogo {
-    margin: 0.8rem 0 0 3rem;
-    filter: brightness(1.2);
+.welcome-NavLogo {
+    padding-left: 3rem;
 }
 
-.welcome-Nav .welcome-NavLogo .welcome-NavLink {
-    text-decoration: none;
+.welcome .welcome-NavItemLink {
     color: white;
+    text-decoration: none;
 }
 
-.welcome-Nav .welcome-NavItems {
-    margin: 0 2.5rem;
+.welcome-NavLogo .welcome-NavLink img {
+    height: 3rem;
 }
 
-.welcome-Nav .welcome-NavItems ul {
+.welcome-NavItems {
+    padding-top: 1rem;
+    padding-right: 2.5rem;
+}
+
+.welcome-NavItems ul {
     list-style: none;
 }
 
-.welcome-Nav .welcome-NavItems ul li .welcome-NavItemLink {
+.welcome-NavItems ul li .welcome-NavItemLink {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 5rem;
-    height: 2.2rem;
+    height: 2rem;
     background-color: rgb(243, 20, 20);
     color: white;
-    border-radius: 5px;
     text-decoration: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
 .welcome-Section {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex: 1;
 }
 
 .welcome-Section h1 {
+    text-align: center;
+    font-weight: bold;
     font-size: 2.5rem;
 }
