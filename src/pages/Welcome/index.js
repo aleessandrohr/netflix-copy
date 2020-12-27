@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer/index';
-import Logo from '../../imagens/netflix-logo-150x79.png';
+import Logo from '../../imagens/netflix-logo-150x46.png';
 import './style.css';
 
 const Welcome = () => {
@@ -10,7 +10,9 @@ const Welcome = () => {
             <header>
                 <nav className="welcome-Nav">
                     <div className="welcome-NavLogo">
-                        <Link className="welcome-NavLink" to="/"><img src={Logo} alt="Netflix"/></Link>
+                        <Link className="welcome-NavLink" to="/">
+                            <img src={Logo} alt="Netflix"/>
+                        </Link>
                     </div>
                     <div className="welcome-NavItems">
                         <ul>
