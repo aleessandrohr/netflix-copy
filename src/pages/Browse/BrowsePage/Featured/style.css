@@ -11,7 +11,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3rem;
+    padding-left: 1rem;
 }
 
 .featured-Nav {
@@ -26,9 +26,16 @@
     transition: all ease 0.4s;
 }
 
+.featured-Nav .featured-NavLogo {
+    padding-left: 3rem;
+}
+
 .featured-Nav .featured-NavLogo .featured-NavLogoLink img {
-    padding: 0.3rem 3rem;
-    filter: brightness(1.2);
+    height: 1.8rem;
+}
+
+.featured-Nav .featured-NavItems {
+    padding-right: 2rem;
 }
 
 .featured-Nav .featured-NavItems ul {
@@ -36,7 +43,6 @@
 }
 
 .featured-Nav .featured-NavItems ul li {
-    margin-right: 3.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +61,7 @@
     flex-direction: column;
     position: fixed;
     top: 70px;
-    right: 60px;
+    right: 35px;
     z-index: 2;
     opacity: 0;
     border-radius: 7px;
@@ -82,19 +88,19 @@
 }
 
 .featured-Overview {
-    margin-top: 1.2rem;
+    padding-top: 1.2rem;
     font-size: 1.2rem;
     max-width: 30%;
     text-align: justify;
 }
 
 .featured-Buttons a {
-    padding: 0.8% 1.8%;
+    padding: 0.5rem 1rem;
     font-size: 1.2rem;
     border-radius: 5px;
     text-decoration: none;
-    margin-right: 0.5rem;
     opacity: 1;
+    margin-right: 0.5rem;
     transition: all ease 0.4s;
     height: 75%;
 }
@@ -113,33 +119,21 @@
     color: #fff;
 }
 
-
 @media (max-width: 1024px) {
     .featured-Overview {
-        font-size: 1.8rem;
         max-width: 50%;
     }
 }
 
 
 @media (max-width: 760px) {
-    .featured-Horizontal header h1 {
-        font-size: 1.5rem;
-    }
-
     .featured-Overview {
-        font-size: 1rem;
-        max-width: 80%;
-    }
-
-    .featured-Buttons a {
-        font-size: 0.75rem;
-        padding: 1.5% 2.3%;
+        max-width: 75%;
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
     .featured-Buttons a {
-        padding: 1.7% 2.5%;
+        padding: 0.3rem 0.3rem;
     }
 }
