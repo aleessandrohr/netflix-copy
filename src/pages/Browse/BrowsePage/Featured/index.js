@@ -1,6 +1,6 @@
 import React, { useState, useEffect, memo} from 'react';
 import { Link } from 'react-router-dom';
-import Netflix from '../../../../imagens/netflix-logo-93x49.png';
+import Netflix from '../../../../imagens/netflix-logo-94x29.png';
 import './style.css';
 
 const Featured = ({featuredData}) => {
