@@ -1,5 +1,5 @@
 import React from 'react';
-import Netflix from '../../../imagens/netflix-logo-150x79.png'
+import Netflix from '../../../imagens/netflix-logo-150x46.png'
 import './style.css';
 
 const BrowseLoading = () => {
