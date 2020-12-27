@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
-    <img src="https://img.shields.io/badge/version-2.0.3-red" alt="versão">
+    <img src="https://img.shields.io/badge/version-2.0.4-red" alt="versão">
 </p>
 
 # Netflix Copy.
@@ -33,10 +33,10 @@ Para o desenvolvimento desta aplicação foi utilizado as seguintes tecnologias:
 
 A aplicação teve os seguintes ajustes e melhorias:
 
-* Adicionado rota Browse;
-* Adicionado featured na página Browse;
-* Adicionado página de carregamento;
-* Melhorado design da página Error 404;
+* Melhorado responsividade de todas as páginas;
+* Alterado imagens;
+* Adicionado filmes e séries no site;
+* Adicionado favicon;
 
 ---
 
