@@ -1,0 +1,79 @@
+.container-listItem {
+    margin-bottom: 2rem;
+}
+
+.movie-MovieTitle {
+    padding-left: 1.3rem;
+}
+
+.movie-MovieTitle h1 {
+    font-size: 1.5rem;
+}
+
+.movie-MovieChevron .chevronLeft, .movie-MovieChevron .chevronRight {
+    position: absolute;
+    height: 300px;
+    font-size: 3rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.movie-MovieChevron .chevronLeft i, .movie-MovieChevron .chevronRight i {
+    cursor: pointer;
+}
+
+.movie-MovieChevron .chevronLeft {
+    visibility: hidden;
+    padding-left: 0.5rem;
+    left: 0;
+}
+
+.movie-MovieChevron .chevronRight {
+    padding-right: 0.5rem;
+    right: 0;
+}
+
+.movie-listItem:hover .movie-MovieChevron .chevronRight, .movie-listItem:hover .movie-MovieChevron .chevronLeft {
+    opacity: 1;
+}
+
+.movie-MovieArea {
+    overflow-x: hidden;
+}
+
+.movie-MovieList {
+    transition: all ease 0.5s;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.movie-MovieItem img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-radius: 5px;
+    transform: scale(0.8);
+    transition: all ease 0.3s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    width: 200px;
+    height: 100%;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.movie-MovieItem img:hover {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1024px) {
+    .movie-MovieChevron .chevronLeft, .movie-MovieChevron .chevronRight {
+        opacity: 1;
+    }
+}
