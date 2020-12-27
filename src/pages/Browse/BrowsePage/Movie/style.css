@@ -60,12 +60,6 @@
     transform: scale(0.8);
     transition: all ease 0.3s;
     cursor: pointer;
-    background-color: white;
-    color: black;
-    width: 200px;
-    height: 100%;
-    font-size: 2rem;
-    text-align: center;
 }
 
 .movie-MovieItem img:hover {
