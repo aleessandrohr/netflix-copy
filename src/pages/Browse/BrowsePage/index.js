@@ -1,9 +1,10 @@
 import React from 'react'
 import Featured from './Featured/index'
+import Movie from './Movie/index';
 import Footer from '../../../components/Footer/index';
 import './style.css';
 
-const BrowsePage = ({featuredData}) => {
+const BrowsePage = ({featuredData, movieList}) => {
 
     //header
 
@@ -19,7 +20,7 @@ const BrowsePage = ({featuredData}) => {
                 <Featured featuredData={featuredData} movie />
             </header>
             <section className="browsePage-Section">
-
+                <Movie movieList={movieList} />
             </section>
             <Footer />
         </div>
