@@ -1,9 +1,11 @@
 import React, { useState, memo } from 'react'
+
 import NavMain from '../../components/NavMain/index';
 import Footer from '../../components/Footer/index';
+
 import './style.css';
 
-const Login = ({setLogged}) => {
+const Login = () => {
 
     const [userName, setUserName] = useState('')
 
@@ -12,10 +14,10 @@ const Login = ({setLogged}) => {
     }
 
     const submitUser = (e) => {
-        if (userName !== '' && userName.length > 3) {
-            localStorage.setItem("isLogged", "true")
+        if (userName !== '') {
+            localStorage.setItem("isAuthenticated", "true")
             localStorage.setItem("Username", userName)
-            setLogged("true")
+            window.location.reload()
         } else {
             alert('Ops\nPreencha todas as informações corretamente!')
             setUserName('')
