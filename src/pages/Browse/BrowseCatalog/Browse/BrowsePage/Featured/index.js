@@ -1,6 +1,7 @@
 import React from 'react';
 
 import NavBrowse from '../../../../../../components/NavBrowse/index';
+import Netflix from '../../../../../../imagens/netflix-logo-94x29.png';
 
 import './style.css';
 
@@ -17,7 +18,7 @@ const Featured = ({featuredData}) => {
         <div className="featured-Vertical">
             <div className="featured-Horizontal">
                 <header>
-                    <NavBrowse />
+                    <NavBrowse Netflix={Netflix} />
                     <h1>{featuredData.original_name}</h1>
                 </header>
                 <section className="featured-Overview">

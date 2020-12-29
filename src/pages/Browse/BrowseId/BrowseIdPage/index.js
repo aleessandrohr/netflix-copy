@@ -2,6 +2,7 @@ import React from 'react';
 
 import NavBrowse from './../../../../components/NavBrowse/index';
 import Footer from '../../../../components/Footer/index';
+import Netflix from '../../../../imagens/netflix-logo-94x29.png';
 
 import './style.css';
 
@@ -27,7 +28,7 @@ const BrowseIdPage = ({movieData, type}) => {
                 <div className="browseIdPage-MovieVertical">
                     <div className="browseIdPage-MovieHorizontal">
                         <header className="browseIdPage-Header">
-                            <NavBrowse />
+                            <NavBrowse Netflix={Netflix} />
                             <h1>{title}</h1>
                         </header>
                         <section className="browseIdPage-Overview">
