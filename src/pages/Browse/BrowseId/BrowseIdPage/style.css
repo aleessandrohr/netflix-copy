@@ -1,0 +1,67 @@
+.browseIdPage-Movie {
+    height: 100vh;
+}
+
+.browseIdPage-MovieVertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.788) 10%, transparent 90%);
+}
+
+.browseIdPage-MovieHorizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgba(22, 22, 22, 0.788) 10%, transparent 90%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.browseIdPage-MovieHorizontal header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    max-width: 50%;
+}
+
+.browseIdPage-Overview {
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
+    max-width: 50%;
+    text-align: justify;
+}
+
+.browseIdPage-Buttons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 1;
+    margin-right: 0.5rem;
+    transition: all ease 0.4s;
+    height: 75%;
+}
+
+.browseIdPage-Buttons a:hover {
+    opacity: 0.8;
+}
+
+.browseIdPage-Buttons .watch {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 760px) {
+    .browseIdPage-MovieHorizontal header h1 {
+        max-width: 75%;
+    }
+    .browseIdPage-Overview {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 320px) {
+    .browseIdPage-Buttons a {
+        padding: 0.3rem 0.3rem;
+    }
+}
