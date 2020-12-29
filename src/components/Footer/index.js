@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 import './style.css';
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
             <p>Veja o código-fonte no meu <a href="https://github.com/alessandrohenriqueramos/netflix-copy" target="_blank" rel="noreferrer">GitHub</a> <i className="fab fa-github"></i></p>
             <p>Desenvolvido por Alessandro Henrique Ramos.</p>
         </footer>
-    )
+    );
 }
 
 export default Footer;
