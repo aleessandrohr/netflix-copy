@@ -58,6 +58,7 @@ const NavBrowse = () => {
     const clearStorage = () => {
         localStorage.clear()
         navigate('/')
+        window.location.reload()
     }
 
     return(
