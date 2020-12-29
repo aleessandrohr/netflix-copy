@@ -1,26 +1,28 @@
-import React, { useState, memo } from 'react';
+import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
-import Welcome from './Welcome/index';
+
+import Auth from '../components/Auth/index';
+
+import HomePage from './HomePage/index';
 import Login from './Login/index';
-import Error404 from './Error404/index';
+import NotFound from './NotFound/index';
 import Browse from './Browse/index';
+import BrowseCatalog from './Browse/BrowseCatalog/index';
+import BrowseId from './Browse/BrowseId/index';
 
 const MainRoutes = () => {
-
-    const [isLogged,setIsLogged] = useState(localStorage.getItem("isLogged"));
-
-    const setLogged = (param) => {
-        setIsLogged(param)
-    }
-
     return(
         <Routes>
-            <Route path="/" element={isLogged !== "true" ? <Welcome /> : <Navigate to="/browse" />} />
-            <Route path="/login" element={isLogged !== "true" ? <Login setLogged={setLogged} /> : <Navigate to="/browse" />} />
-            <Route path="/browse" element={isLogged === "true" ? <Browse /> : <Navigate to="/" />} />
-            <Route path="*" element={<Error404 />} />
+            <Route path="/" element={Auth.isAuthenticated() ? <Navigate to="/browse" /> : <HomePage /> } />
+            <Route path="/login" element={Auth.isAuthenticated() ? <Navigate to="/browse" /> : <Login />} />
+            <Route path="/browse" element={Auth.isAuthenticated() ? <Browse /> : <Navigate to="/" />} >
+                <Route path="/" element={Auth.isAuthenticated() ? <BrowseCatalog /> : <Navigate to="/" />} />
+                <Route path="/id/movie/:id" element={Auth.isAuthenticated() ? <BrowseId type="movie" /> : <Navigate to="/" />} />
+                <Route path="/id/tv/:id" element={Auth.isAuthenticated() ? <BrowseId type="tv" /> : <Navigate to="/" />} />
+            </Route>
+            <Route path="*" element={<NotFound />} />
         </Routes>
     )
 }
 
-export default memo(MainRoutes);
+export default MainRoutes;
