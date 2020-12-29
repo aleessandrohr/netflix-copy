@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 
-import Netflix from '../../imagens/netflix-logo-94x29.png';
-
 import './style.css'
 
-const NavBrowse = () => {
+const NavBrowse = ({Netflix}) => {
 
     const navigate = useNavigate()
 
