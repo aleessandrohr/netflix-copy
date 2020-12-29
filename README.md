@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/github/license/mashape/apistatus.svg" alt="license"/>
-    <img src="https://img.shields.io/badge/version-2.0.5-red" alt="versão">
+    <img src="https://img.shields.io/badge/version-2.0-red" alt="versão">
 </p>
 
 # Netflix Copy.
@@ -33,7 +33,13 @@ Para o desenvolvimento desta aplicação foi utilizado as seguintes tecnologias:
 
 A aplicação teve os seguintes ajustes e melhorias:
 
-* Resolvido erro de carregamento de imagens;
+* Mudado o tamanho da logo;
+* Adicionado função de autenticação;
+* Adicionado componente de carregamento;
+* Adicionado componente de nav;
+* Melhorado o roteamento das páginas;
+* Adicionado página exclusiva com as informações do filme/série selecionada;
+* Melhorado a responsividade;
 
 ---
 
@@ -48,8 +54,6 @@ Com essas aplicações instaladas, abra o cmd ou o powershell (dependendo do sis
 ```
 git clone https://github.com/alessandrohenriqueramos/netflix-copy.git
 cd netflix-copy
-git checkout 2.0
-git pull
 ```
 
 No Windows / Mac / Linux:
