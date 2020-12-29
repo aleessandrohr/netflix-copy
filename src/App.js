@@ -1,7 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+
 import Routes from './pages/routes';
+
 import './Normalize.css';
+import './style.css';
 
 const App = () => {
     return(
