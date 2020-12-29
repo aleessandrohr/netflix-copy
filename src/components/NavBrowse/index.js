@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from 'react'
-
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 import Netflix from '../../imagens/netflix-logo-94x29.png';
 
 import './style.css'
 
 const NavBrowse = () => {
+
+    const navigate = useNavigate()
 
     const [blackNav, setBlackNav] = useState(false);
     const [visibility, setVisibility] = useState(false);
@@ -56,7 +57,7 @@ const NavBrowse = () => {
 
     const clearStorage = () => {
         localStorage.clear()
-        window.location.reload()
+        navigate('/')
     }
 
     return(
