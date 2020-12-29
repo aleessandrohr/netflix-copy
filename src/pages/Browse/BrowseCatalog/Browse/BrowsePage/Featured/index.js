@@ -25,7 +25,7 @@ const Featured = ({featuredData}) => {
                 </section>
                 <section className="featured-Buttons">
                     <a className="watch" href={featuredData.homepage} target="_blank" rel="noreferrer"><i className="fas fa-play"></i> Assistir</a>
-                    <a className="plus" href={`/browse/id/tv/${featuredData.id}`}><i className="fas fa-info-circle"></i> Mais informações</a>
+                    <a className="plus" href={featuredData.homepage} target="_blank" rel="noreferrer"><i className="fas fa-info-circle"></i> Mais informações</a>
                 </section>
             </div>
         </div>
