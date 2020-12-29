@@ -1,0 +1,67 @@
+.navBrowse-Nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    transition: all ease 0.4s;
+}
+
+.navBrowse-Nav .navBrowse-NavLogo {
+    padding-left: 3rem;
+}
+
+.navBrowse-Nav .navBrowse-NavLogo .navBrowse-NavLogoLink img {
+    height: 1.8rem;
+}
+
+.navBrowse-Nav .navBrowse-NavItems {
+    padding-right: 2rem;
+}
+
+.navBrowse-Nav .navBrowse-NavItems ul {
+    list-style: none;
+}
+
+.navBrowse-Nav .navBrowse-NavItems ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navBrowse-Nav .navBrowse-NavItems ul li .fa-chevron-down {
+    margin: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.navBrowse-NavProfile {
+    background-color: #161616d8;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    right: 35px;
+    z-index: 2;
+    opacity: 0;
+    border-radius: 7px;
+    visibility: hidden;
+    transition: all ease 0.4s;
+}
+
+.navBrowse-NavProfile ul {
+    margin: 0.5rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.navBrowse-NavProfile ul li {
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.25rem;
+    cursor: pointer;
+}

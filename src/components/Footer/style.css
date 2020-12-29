@@ -1,0 +1,8 @@
+.footer-component {
+    text-align: center;
+}
+
+.footer-component p a {
+    text-decoration: none;
+    color: white;
+}

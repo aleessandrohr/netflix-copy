@@ -1,0 +1,19 @@
+.navMain{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navMain .navMain-NavLogo {
+    padding: 0.85rem;
+    padding-left: 3rem;
+}
+
+.navMain .navMain-NavLogo .navMain-NavLink {
+    color: white;
+    text-decoration: none;
+}
+
+.navMain .navMain-NavLogo .navMain-NavLink img {
+    height: 3rem;
+}

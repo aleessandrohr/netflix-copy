@@ -1,0 +1,71 @@
+.featured-Vertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.788) 25%, transparent 75%);
+}
+
+.featured-Horizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, rgba(22, 22, 22, 0.788) 35%, transparent 65%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem;
+}
+
+.featured-Horizontal header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.featured-Overview {
+    padding-top: 1.2rem;
+    font-size: 1.2rem;
+    max-width: 30%;
+    text-align: justify;
+}
+
+.featured-Buttons a {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 1;
+    margin-right: 0.5rem;
+    transition: all ease 0.4s;
+    height: 75%;
+}
+
+.featured-Buttons a:hover {
+    opacity: 0.8;
+}
+
+.featured-Buttons .watch {
+    background-color: #fff;
+    color: #000;
+}
+
+.featured-Buttons .plus {
+    background-color: #333;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .featured-Overview {
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .featured-Overview {
+        max-width: 75%;
+    }
+}
+
+@media (max-width: 320px) {
+    .featured-Buttons a {
+        padding: 0.3rem 0.3rem;
+    }
+}
