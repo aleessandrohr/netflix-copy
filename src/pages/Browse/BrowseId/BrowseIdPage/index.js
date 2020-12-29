@@ -28,6 +28,7 @@ const BrowseIdPage = ({movieData, type}) => {
                 <div className="browseIdPage-MovieVertical">
                     <div className="browseIdPage-MovieHorizontal">
                         <header className="browseIdPage-Header">
+                            <img src={Netflix} alt="teste"></img>
                             <NavBrowse Netflix={Netflix} />
                             <h1>{title}</h1>
                         </header>
