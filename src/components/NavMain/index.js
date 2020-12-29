@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+
 import Netflix from '../../imagens/netflix-logo-150x46.png';
+
 import './style.css';
 
 const NavMain = () => {
