@@ -52,7 +52,7 @@ Com essas aplicações instaladas, abra o cmd ou o powershell (dependendo do sis
 ## Execute
 
 ```
-git clone https://github.com/alessandrohenriqueramos/netflix-copy.git
+git clone https://github.com/alessandroramos13/netflix-copy.git
 cd netflix-copy
 ```
 
