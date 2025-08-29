@@ -11,7 +11,7 @@
 
 ## Acesse
 
-Para acessar o site apenas clique [aqui](https://netflixcopy.vercel.app/).
+Para acessar o site apenas clique [aqui](https://netflixcopy.aleessandrohr.dev.br).
 
 <img src="https://media.giphy.com/media/LnuOPA23FxnCoW7RBI/giphy.gif" alt="gif" height="180px" >
 
